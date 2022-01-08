@@ -34,7 +34,7 @@ For a system to send webhooks, the system has to be able to support the process.
 
 Webhooks are most common in [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) platforms like [GitHub](https://docs.github.com/en/developers/webhooks-and-events/webhooks/about-webhooks), [Shopify](https://shopify.dev/api/admin/rest/reference/events/webhook), [Stripe](https://stripe.com/docs/webhooks), [Twilio](https://www.twilio.com/docs/usage/webhooks), and [Slack](https://slack.com/intl/en-ca/help/articles/115005265063-Incoming-webhooks-for-Slack) because they support different types of events based on the activities that happen within them.
 
-To receive webhook requests, you have to register for one or more of the events (also known as topics) for which the platform offers a webhook. A webhook request will be sent to a destination endpoint (URL). It can be your application, register the URL as the Webhook URL for that event.
+To receive webhook requests, you have to register for one or more of the events (also known as topics) for which the platform offers a webhook. A webhook request will be sent to a destination endpoint (URL). It can be your application, register the URL as the ***Webhook URL*** for that event.
 
 Once the webhook registration for an event is complete, you will receive webhook requests at the destination URL you provided each time the event occurs.
 
