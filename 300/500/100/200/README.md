@@ -24,6 +24,10 @@ WebSockets are used to facilitate two-way real-time communication between two ne
 
 This opens a duplex communication stream enabling both the client and server to pass information between one another with no significant latency added.
 
+![image](https://user-images.githubusercontent.com/12828104/148641001-7e96bd60-6e63-44cf-b753-495ae900b9a1.png)
+
+WebSockets
+
 ### 200 - Differences between webhooks and WebSockets
 
 Webhooks are used for one-way communication from a source application to a destination application, while WebSockets facilitate two-way communication between server and client.
@@ -46,6 +50,17 @@ Use WebSockets when you want two-way communication between two networked systems
 
 Once a message is published to a specific topic, the message is cloned and sent to all the subscribers subscribed to it.
 
-== IMAGE HERE ==
+== IMAGE HERE, MISSING ==
+
+pub/sub
+
+### 200 - Differences between webhooks and pub/sub
+
+In a pub/sub system, message sources are decoupled from message consumers while in webhooks, the message producer is fully aware of the location of the consumer through the webhook URL.
+
+Webhooks are a direct form of communication between the producer and consumer while pub/sub is a middle-man framework that routes messages from publishers to subscribers. The communication setup in a webhook is one-to-one, i.e. one producer to one consumer, while in a pub/sub system you can have many producers sending messages to multiple consumers.
+
+
+
 
 
