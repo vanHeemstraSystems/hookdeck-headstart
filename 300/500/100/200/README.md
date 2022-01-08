@@ -60,7 +60,27 @@ In a pub/sub system, message sources are decoupled from message consumers while 
 
 Webhooks are a direct form of communication between the producer and consumer while pub/sub is a middle-man framework that routes messages from publishers to subscribers. The communication setup in a webhook is one-to-one, i.e. one producer to one consumer, while in a pub/sub system you can have many producers sending messages to multiple consumers.
 
+### 300 - When to use pub/sub
+
+Use a pub/sub system when you have multiple consumers interested in the same message or more than one message producer.
+
+Also, use a pub/sub system when you want to asynchronously process messages. Webhooks are synchronous.
+
+An example of a situation where a pub/sub system is appropriate is in an e-commerce site. When a customer makes a purchase, you need to mail an invoice to the customer, send information to the delivery department, and enter the sale record in your CRM. Let's imagine that a mailing service, delivery service, and records service handle these responsibilities respectively.
+
+That is three systems interested in the same message. You can publish this message to a pub/sub system, which will then route it to these three subscribed services.
+
+## 400 - Webhooks or polling
+
+### 100 - How polling works
+
+Polling involves periodically making requests to a system to check for new events or data. If new data is found, a response is returned with the new data in its payload. If no new data is available, nothing is returned.
+
+Polling is used to query systems for new information and can be set up as an automated cron job that runs at certain intervals.
+
+To capture the difference between these two approaches with a relatable example, polling is like going to the post office to check if you have new mail. Using webhooks is basically having mail delivered to your house every time you have new mail simply by giving the postman your house address.
 
 
 
+WE ARE HERE
 
