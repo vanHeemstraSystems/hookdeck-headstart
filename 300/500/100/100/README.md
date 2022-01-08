@@ -12,7 +12,9 @@ A webhook is an HTTP request, triggered by an event in a source system and sent 
 
 This provides a way for one system (the source) to "speak" (HTTP request) to another system (the destination) when an event occurs, and share information (request payload) about the event that occurred.
 
-== IMAGE HERE ==
+![image](https://user-images.githubusercontent.com/12828104/148640616-63ca1e74-36d3-4172-b0f9-b45772756a8e.png)
+
+Webhooks
 
 ## 200 - What are webhooks used for?
 
