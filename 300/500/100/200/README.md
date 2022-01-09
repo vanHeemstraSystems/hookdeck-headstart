@@ -80,6 +80,14 @@ Polling is used to query systems for new information and can be set up as an aut
 
 To capture the difference between these two approaches with a relatable example, polling is like going to the post office to check if you have new mail. Using webhooks is basically having mail delivered to your house every time you have new mail simply by giving the postman your house address.
 
+![image](https://user-images.githubusercontent.com/12828104/148682012-14dcda79-f6bf-4ae3-802e-3ec405417788.png)
+
+New Events
+
+
+
+
+
 
 
 WE ARE HERE
