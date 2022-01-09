@@ -84,10 +84,31 @@ To capture the difference between these two approaches with a relatable example,
 
 New Events
 
+### 200 - How webhooks differ from polling
 
+Polling uses the pull model of communication where a system pulls information from another system, while webhooks use the push model by pushing information from a source application to a destination application.
 
+Polling requests are made by a client, while webhook requests are made by a server. Webhooks are also automatically triggered when an event occurs, whereas polling is set up to run at fixed intervals and runs whether there is a new event or not.
 
+Polling can be resource-intensive and you need to make calls on whether the efforts will be fruitful or not. This is not the case for webhook requests, which are only made when there is new information.
 
+### 300 - When to use polling
+
+Polling can be used when you don't need real-time updates, which cause frequent changes in data and can crash your system if you decide to receive updates every single time something changes.
+
+Imagine you're running a successful startup and the number of users is growing by a hundred users each second. You want a big screen in the middle of the office to display your current subscriber count. Subscribing for new data each time a new user signs up would be chaos.
+
+What you should do is poll your server every five to ten minutes to fetch the current total number of users. This would be lesser work for your system and ultimately would consume lesser resources.
+
+## 500 - Webhooks and APIs
+
+### 100 - What is an API?
+
+An API is an application's gateway to the world. It is the interface that allows other systems to interact with the application. The application can expose as much as it wants and keep its remaining parts abstracted.
+
+APIs are usually a collection of endpoints that clients can call to communicate with the system. This communication is done via request methods such as GET or POST, and may carry some information related to the action the client is willing to perform.
+
+== IMAGE HERE ==
 
 
 WE ARE HERE
