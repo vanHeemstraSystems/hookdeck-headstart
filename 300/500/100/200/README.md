@@ -108,8 +108,52 @@ An API is an application's gateway to the world. It is the interface that allows
 
 APIs are usually a collection of endpoints that clients can call to communicate with the system. This communication is done via request methods such as GET or POST, and may carry some information related to the action the client is willing to perform.
 
-== IMAGE HERE ==
+![image](https://user-images.githubusercontent.com/12828104/148682174-d227ad93-d4d7-41b1-9fc1-3900f8fe65ac.png)
 
+API
 
-WE ARE HERE
+### 200 - How webhooks differ from APIs
 
+Webhooks make calls to APIs. An API provides webhooks with the entry point to push data to an application. When an event occurs in a source application, a webhook request is triggered to one of the API endpoints.
+
+## 600 - When to use webhooks
+
+Now that you have a good understanding of how webhooks and other communication systems work, in what scenarios is it then appropriate to go with webhooks?
+
+Webhooks are a simplified model of communication thus, you should use webhooks when you require the following:
+
+- Real-time one-way communication (from source to destination)
+- A non-persistent connection between the two systems' communication
+- You want to respond immediately to an event from a SaaS application that supports webhooks
+- You want to use the push model to immediately push updates
+- The communication is one-to-one
+
+A lot of SaaS applications use webhooks for communication — for example, Shopify uses webhooks to communicate events like when a shopping cart is updated or a sale is made. Stripe uses webhooks to communicate events like account updates, payments, etc.
+
+Examples of these types of scenarios include:
+
+1. An e-commerce store notifying your invoicing application about a sale
+2. E-commerce stores notifying merchants when a particular item is out of stock
+3. Payment gateway notifying merchants about a payment
+4. Version control systems notifying team members about a commit to a repository
+5. Monitoring systems alerting administrators about an error or unusual activity in a system
+6. Synchronizing information across systems — for example when a user changes their email in your HR or CRM system, their email is also changed in the payroll or invoicing system
+
+## 700 - Examples of sites that use webhooks
+
+### 100 - Sites that send webhooks for notifications and information sharing
+
+1. [Twilio webhooks](https://www.twilio.com/docs/usage/webhooks) convey information about events such as delivered SMS messages, voice calls, and authentication
+2. [Slack webhooks](https://slack.com/intl/en-ca/help/articles/115005265063-Incoming-webhooks-for-Slack) post messages from apps into Slack
+3. [Shopify webhooks](https://shopify.dev/api/admin/rest/reference/events/webhook) sync with Shopify and execute code when an event takes place in your store
+4. [Stripe webhooks](https://stripe.com/docs/webhooks) notify your application when an event occurs in your account … there are many more examples.
+
+### 200 - Sites that process webhooks
+
+1. [Hookdeck](https://hookdeck.com/): ingests, scales and monitors webhooks traffic
+2. [Zapier](https://zapier.com/): uses webhooks to connect different apps in your workflows
+3. [IFTTT](https://ifttt.com/): connects different apps and devices to extend their functionality
+
+## 800 - Conclusion
+
+Knowing the right tools to solve a problem is what sets engineers apart. The fact that a technique is simple, fancy, or largely adopted doesn't automatically make it the best tool for the job. Webhooks are straight-forward and simple to implement, but may not always be the right way to go for the problem you're trying to solve. Being able to understand the advantages and limitations of the webhooks process will hopefully help you understand the right places to implement it.
