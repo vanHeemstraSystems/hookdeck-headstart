@@ -33,6 +33,11 @@ If you want to learn more about Stripe webhooks before we get started, you can r
 
 Head over to the [Stripe registration page](https://dashboard.stripe.com/register) to set up a new account. You will be required to verify your email address after you register.
 
+Created:
+
+- User email: wvanheemstra@icloud.com
+- Password: *****
+
 ### 200 - Clone a Node.js API
 
 
