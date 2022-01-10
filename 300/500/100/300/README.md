@@ -40,6 +40,13 @@ Created:
 
 ### 200 - Clone a Node.js API
 
+Once you have your Stripe account set up, the next step is to clone the demo Node.js API. The API we will be using is available on [Hookdeck's GitHub repo](https://github.com/hookdeck/nodejs-webhook-server-example). Clone this repository by running the following command:
+
+```
+git clone https://github.com/hookdeck/nodejs-webhook-server-example.git
+```
+
+
 
 
 
