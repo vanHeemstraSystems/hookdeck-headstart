@@ -20,9 +20,20 @@ Going through technical documentation is not perceived to be a fun-filled exerci
 
 ## 200 - Tutorial: How to set up Stripe webhooks
 
+Now that we have a good amount of webhook knowledge, let's put that knowledge into action with an exercise using [Stripe](https://stripe.com/). We are going to sign up for a Stripe account and register for Stripe webhooks in order to receive webhook requests on a demo Node.js server.
 
+If you want to learn more about Stripe webhooks before we get started, you can read their docs at [Developer Tools → Webhooks](https://stripe.com/docs/webhooks). Here, you can find information on
 
+1. [Working with different programming languages](https://stripe.com/docs/webhooks/build)
+2. [Stripe verification](https://stripe.com/docs/webhooks/signatures) signatures for authentication
+3. Stripe webhook integration [best practices](https://stripe.com/docs/webhooks/best-practices)
+4. [Sample integrations](https://stripe.com/docs/webhooks/integration-builder)
 
+### 100 - Create a Stripe account
+
+Head over to the [Stripe registration page](https://dashboard.stripe.com/register) to set up a new account. You will be required to verify your email address after you register.
+
+### 200 - Clone a Node.js API
 
 
 
