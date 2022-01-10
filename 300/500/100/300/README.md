@@ -81,4 +81,32 @@ This endpoint receives the webhook requests, prints the request body to the cons
 
 ### 300 - Get a webhook URL
 
+For the source application to send a webhook request, the destination app needs to register a webhook URL with the source. It is also a requirement by most webhook providers that this endpoint uses the [HTTPS](https://en.wikipedia.org/wiki/HTTPS) protocol for security reasons. Thus, we need a publicly accessible URL that uses HTTPS.
+
+Fortunately, the [Hookdeck CLI](https://hookdeck.com/cli) is built just for that. With the Hookdeck CLI, you can receive webhooks locally and debug them seamlessly. Visit the [CLI documentation](https://hookdeck.com/docs/using-the-cli) to install and set up the tool on your operating system.
+
+Once the setup process is complete, the next step is to use the CLI to generate a webhook URL that points to the running API application. To do this, run the following command:
+
+```
+$ hookdeck listen 1337
+```
+
+This command starts an interactive session where the CLI collects information about the endpoint you're about to create. Below are the questions and answers you should supply to each question. Ensure to hit the **Enter** key after each answer.
+
+| prompt | Answer |
+| --- | --- |
+| Select a source? | Create new source |
+| What should your new source label be? | Stripe |
+| What path should the webhooks be forwarded to (i.e.: /webhooks)? | /stripe-webhooks-endpoint |
+| What's connection label (i.e.: My API)? | My Stripe API |
+
+With this information, the CLI will begin the process of generating the URL and once it's done, you will see the URL printed to the screen and the CLI indicating that it is ready to receive requests.
+
+Copy the ```webhook URL```, as it will be required in the next section.
+
+- [CLI Reference](https://hookdeck.com/cli): CLI Reference for the Hookdeck CLI
+- [Using The Hookdeck CLI](https://hookdeck.com/docs/using-the-cli): How to use the Hookdeck CLI
+
+### 400 - Set up webhook on Stripe
+
 == WE ARE HERE ==
