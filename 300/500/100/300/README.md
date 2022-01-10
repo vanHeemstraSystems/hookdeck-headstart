@@ -43,13 +43,42 @@ Created:
 Once you have your Stripe account set up, the next step is to clone the demo Node.js API. The API we will be using is available on [Hookdeck's GitHub repo](https://github.com/hookdeck/nodejs-webhook-server-example). Clone this repository by running the following command:
 
 ```
-git clone https://github.com/hookdeck/nodejs-webhook-server-example.git
+$ git clone https://github.com/hookdeck/nodejs-webhook-server-example.git
 ```
 
 **NOTE**: If you are blocked from cloning from GitHub (perhaps becasue you are behind a corporate firewall), you can also ```download``` and unzip the repository directly from the web page at https://github.com/hookdeck/nodejs-webhook-server-example.
 
 Or find the same repository files here at https://github.com/vanHeemstraSystems/hookdeck-headstart/tree/main/containers/app/hookdeck
 
+This will make the project available at the location on your file system where you ran the command.
 
+Navigate to the root of the project and install the required dependencies by running the following commands:
+
+```
+$ cd nodejs-webhook-server-example
+$ npm install
+```
+
+When the installation completes, you can then run the Node.js server with the following command:
+
+```
+$ npm start
+```
+
+This will boot up the API application and print a message to the screen indicating that the API is now running and listening for connections on ```port 1337```.
+
+The endpoint to be used for the webhook requests is ```/stripe-webhooks-endpoint``` and can be found in the ```routes.js``` file as shown below:
+
+```
+router.post("/stripe-webhooks-endpoint", bodyParser.raw({type: 'application/json'}), function(req, res) {
+ console.log(req.body);
+ res.send("Stripe Successfully received Webhook request");
+});
+```
+routes.js
+
+This endpoint receives the webhook requests, prints the request body to the console, and returns a message.
+
+### 300 - Get a webhook URL
 
 == WE ARE HERE ==
