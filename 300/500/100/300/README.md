@@ -46,6 +46,8 @@ Once you have your Stripe account set up, the next step is to clone the demo Nod
 git clone https://github.com/hookdeck/nodejs-webhook-server-example.git
 ```
 
+**NOTE**: If you are blocked from cloning from GitHub (perhaps becasue you are behind a corporate firewall), you can also ```download``` and unzip the repository directly from the web page at https://github.com/hookdeck/nodejs-webhook-server-example.
+
 
 
 
