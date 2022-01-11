@@ -152,7 +152,23 @@ Once the setup process is complete, the next step is to use the CLI to generate 
 $ hookdeck listen 1337
 ```
 
-This command starts an interactive session where the CLI collects information about the endpoint you're about to create. Below are the questions and answers you should supply to each question. Ensure to hit the **Enter** key after each answer.
+This command starts an interactive session where the CLI collects information about the endpoint you're about to create. 
+
+Possible outcome:
+
+```
+🚩 Not connected with any account. Creating a guest account...
+You have not configured API keys yet. Running `hookdeck login`...
+Post "https://api.hookdeck.com/cli-auth": dial tcp 34.149.33.140:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. 
+```
+
+
+
+
+
+== WE ARE HERE ==
+
+Below are the questions and answers you should supply to each question. Ensure to hit the **Enter** key after each answer.
 
 | prompt | Answer |
 | --- | --- |
