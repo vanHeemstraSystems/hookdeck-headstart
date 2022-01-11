@@ -85,7 +85,7 @@ For the source application to send a webhook request, the destination app needs 
 
 Fortunately, the [Hookdeck CLI](https://hookdeck.com/cli) is built just for that. With the Hookdeck CLI, you can receive webhooks locally and debug them seamlessly. Visit the [CLI documentation](https://hookdeck.com/docs/using-the-cli) to install and set up the tool on your operating system.
 
-***Note***: for Windows, install [scoop](https://scoop.sh/) - a package maneger for Windows - as follows in Visual Studio Code / Windows Terminal:
+***Note***: for Windows, install [scoop](https://scoop.sh/) - a package manager for Windows - as follows in Visual Studio Code / Windows Terminal:
 
 ```
 $ Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
