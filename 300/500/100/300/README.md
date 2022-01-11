@@ -104,6 +104,18 @@ $ scoop bucket add hookdeck https://github.com/hookdeck/scoop-hookdeck-cli.git
 $ scoop install hookdeck
 ```
 
+If you cannot download this repository, because you are behind a corporate proxy, see https://scoop-docs.vercel.app/docs/misc/Using-Scoop-behind-a-proxy.html, and set:
+
+```
+$ scoop config proxy [username:password@]host:port
+```
+
+where:
+- username: your proxy user
+- password: your proxy user password (encode as Base64 if it contains special characters, use e.g. https://www.base64encode.net/)
+- host: your proxy host
+- port: your proxy host port
+
 Once the setup process is complete, the next step is to use the CLI to generate a webhook URL that points to the running API application. To do this, run the following command:
 
 ```
