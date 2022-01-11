@@ -128,6 +128,24 @@ Complete the hookdeck installation as folows:
 $ scoop install hookdeck
 ```
 
+Expected outcome is:
+
+```
+Updating Scoop...
+Updating 'hookdeck' bucket...
+Updating 'main' bucket...
+Checking repo... ok
+The main bucket was added successfully.
+Scoop was updated successfully!
+Installing 'hookdeck' (0.4.4) [64bit]
+hookdeck_0.4.4_windows_x86_64.zip (3.5 MB) [=================================================] 100%    
+Checking hash of hookdeck_0.4.4_windows_x86_64.zip ... ok.
+Extracting hookdeck_0.4.4_windows_x86_64.zip ... done.
+Linking ~\scoop\apps\hookdeck\current => ~\scoop\apps\hookdeck\0.4.4
+Creating shim for 'hookdeck'.
+'hookdeck' (0.4.4) was installed successfully!
+```
+
 Once the setup process is complete, the next step is to use the CLI to generate a webhook URL that points to the running API application. To do this, run the following command:
 
 ```
